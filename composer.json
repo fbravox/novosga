@@ -92,6 +92,52 @@
             "App\\Tests\\": "tests/"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/attendance-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/core.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/customers-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/monitor-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/panel-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/reports-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/novosga/scheduling-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/settings-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/triage-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/users-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fbravox/pretriage-bundle.git"
+        }
+    ],
     "replace": {
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
