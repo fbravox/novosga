@@ -5,6 +5,7 @@ on:
     tags: '*'
     branches:
       - 'v2.3'
+      - 'v2.4'
 
 env:
   IMAGE_NAME: ${{ github.repository }}
