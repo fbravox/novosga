@@ -80,6 +80,63 @@ Antes de commit ou push:
 - revisar o diff e a mensagem em português;
 - confirmar o destino do push.
 
+## Fluxo Git e coordenação de trabalho
+
+O GitHub é o registro público do projeto. Issues, comentários, commits, pull
+requests, decisões de integração e releases devem permanecer rastreáveis no
+repositório correto. Anotações locais podem apoiar o trabalho, mas não
+substituem a issue nem devem ser tratadas como decisão publicada sem registro
+no GitHub.
+
+Antes de iniciar um ciclo de trabalho:
+
+1. ler o `AGENTS.md` e o arquivo `AGENTS-NOME_DA_BRANCH`, quando existir;
+2. confirmar branch, remotes, estado do worktree e identidade do repositório;
+3. ler a issue completa e seus comentários, verificando dependências,
+   duplicidades e decisões posteriores;
+4. registrar na issue a abordagem, os riscos e as mudanças de escopo quando
+   isso for necessário para a continuidade do trabalho.
+
+Uma issue deve representar uma unidade de trabalho identificável. Agrupar
+issues em um pacote só é aceitável quando houver relação técnica clara e o
+agrupamento estiver registrado; caso contrário, manter commits, validações e
+referências separados por issue.
+
+Não misturar no mesmo branch ou commit alterações de outra issue, experimento,
+pacote ou projeto. Se o worktree já contiver alterações que não pertencem à
+tarefa atual, preservá-las e trabalhar apenas nos caminhos autorizados.
+
+Alterações em dependências forkadas ou em outros repositórios devem ter escopo
+próprio, referência explícita ao repositório/branch/tag/commit e verificação de
+compatibilidade antes de serem incorporadas à aplicação.
+
+## Commits, push, revisão e encerramento
+
+Os commits devem ser pequenos, coerentes e reversíveis, com mensagem em
+português do Brasil que descreva o resultado. Antes de criar o commit, revisar
+o diff completo e confirmar que não há segredos, arquivos temporários ou
+alterações de outra tarefa.
+
+Depois do commit, publicar a branch de trabalho no remoto correto e conferir o
+commit efetivamente publicado. Registrar na issue os commits, pull requests e
+resultados de validação relevantes, usando links permanentes quando possível.
+
+O commit ou o push não encerram uma issue por si só. Encerrar somente após a
+implementação estar validada, a revisão ou integração prevista ter ocorrido e
+as referências finais terem sido publicadas na issue. Se o escopo mudar,
+registrar a decisão antes de continuar; não fechar e recriar uma issue apenas
+para ocultar histórico ou perda de contexto.
+
+Quando houver pull request, mantê-lo vinculado à issue e descrever claramente
+escopo, dependências, testes, limitações conhecidas e procedimento de
+validação. A integração em `dev` ou em outra branch de destino depende da
+revisão e aprovação previstas para aquela mudança.
+
+Falhas de autenticação, permissão, remoto ou publicação devem ser
+diagnosticadas explicitamente. Não concluir que uma issue, branch ou arquivo
+não existe apenas por causa de resposta de acesso negado, repositório errado
+ou sessão não autenticada.
+
 ## Docker Desktop e stacks locais
 
 O desenvolvimento e a validação local usam Docker Desktop com containers
