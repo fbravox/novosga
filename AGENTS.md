@@ -274,6 +274,21 @@ acentuação, ausência de duplicidades e a inexistência de qualquer escrita fo
 do DEV. Scripts e evidências devem permanecer em `fork23-work` ou subpasta
 equivalente dentro da raiz do projeto, nunca em pastas externas.
 
+## Cliente padrão para entregas de teste
+
+Toda entrega disponibilizada para teste deve informar o cliente padrão da base
+DEV do fork23, com o CPF sem máscara para facilitar a cópia:
+
+- Nome: `CLIENTE TESTE`;
+- CPF: `08866296759`.
+
+Esse registro deve existir na base DEV do fork23 e permanecer disponível como
+referência para testes complementares, mesmo quando a alteração não envolver
+diretamente clientes. Antes de liberar uma entrega, confirmar que o registro
+está presente no banco DEV correto, sem duplicá-lo ou alterar dados de outros
+ambientes. O registro é uma massa fixa de teste e não deve ser criado,
+exportado ou utilizado em produção.
+
 ## Restauração de dumps MySQL
 
 O banco oficial da aplicação fork23 permanece sendo o PostgreSQL definido pelo
