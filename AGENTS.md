@@ -23,9 +23,10 @@ projeto. Ele deve permanecer sincronizado entre a branch default `v2.3`, a
 branch de integração `dev` e as branches de customização ativas.
 
 Cada branch de customização pode possuir, na raiz, um arquivo secundário no
-formato `AGENTS-NOME_DA_BRANCH`, por exemplo `AGENTS-TTS`. Esse arquivo registra
-somente regras, decisões, escopo, validações e procedimentos específicos da
-branch onde está inserido.
+formato `AGENTS-NOME_DA_BRANCH.md`, por exemplo `AGENTS-TTS.md`. A extensão
+`.md` é obrigatória para todos os arquivos secundários de fluxo. Esse arquivo
+registra somente regras, decisões, escopo, validações e procedimentos
+específicos da branch onde está inserido.
 
 As regras podem ser refinadas dinamicamente durante o projeto. Quando uma regra
 global for criada ou alterada, atualizar o `AGENTS.md` e sincronizar o arquivo
@@ -90,7 +91,7 @@ no GitHub.
 
 Antes de iniciar um ciclo de trabalho:
 
-1. ler o `AGENTS.md` e o arquivo `AGENTS-NOME_DA_BRANCH`, quando existir;
+1. ler o `AGENTS.md` e o arquivo `AGENTS-NOME_DA_BRANCH.md`, quando existir;
 2. confirmar branch, remotes, estado do worktree e identidade do repositório;
 3. ler a issue completa e seus comentários, verificando dependências,
    duplicidades e decisões posteriores;
@@ -391,4 +392,4 @@ fluxo visual principal quando houver uma estratégia de recuperação prevista.
 Este arquivo é vivo. Novos fluxos de branch, Docker, validação, publicação,
 licenciamento, migração de issues e releases devem ser incorporados aqui quando
 forem regras globais. Procedimentos exclusivos de uma branch devem permanecer
-no respectivo `AGENTS-NOME_DA_BRANCH`.
+no respectivo `AGENTS-NOME_DA_BRANCH.md`.
