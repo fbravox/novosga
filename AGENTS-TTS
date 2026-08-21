@@ -13,6 +13,23 @@ O escopo foi originado na issue #101 do projeto `fbravox/novosga_tjrs` e será
 acompanhado pela issue migrada para o fork23. A issue original só deve ser
 considerada encerrada quando a nova referência estiver publicada e vinculada.
 
+## Worktree e anotações da branch
+
+O worktree oficial desta branch é:
+
+`C:\Users\fbravo\Documents\Codex\fork23\fork23-tts`
+
+Anotações, dumps, capturas, scripts de teste, modelos baixados para avaliação
+e textos intermediários da TTS devem permanecer em subpastas identificadas de
+`C:\Users\fbravo\Documents\Codex\fork23`, preferencialmente em
+`fork23-work`. Não criar ou manter artefatos desta branch no workspace do
+`novosga_tjrs` ou fora da raiz do fork23.
+
+Anotações recebidas pela conversa de WhatsApp do responsável devem seguir o
+fluxo global de importação pelo Chrome e somente entram no escopo da TTS após
+triagem, comparação com a issue migrada e registro no GitHub. Não transformar
+automaticamente uma mensagem do ZAP em alteração de código ou issue nova.
+
 ## Pré-requisito obrigatório: painel
 
 Antes de iniciar a adição da funcionalidade TTS, o painel do fork23 deve
@@ -144,6 +161,17 @@ mapeamento do código-fonte. A validação deve confirmar:
 7. ausência de exposição indevida de dados;
 8. healthcheck, logs e inicialização do container;
 9. comportamento em monitor horizontal e janela alta/estreita.
+
+O serviço MySQL auxiliar, quando necessário para diagnóstico ou integração,
+deve ser acessado pelos túneis locais definidos no fluxo global, nas portas
+`6000` (DEV) e `7000` (validação/segundo ambiente), usando os binários em
+`C:\Users\fbravo\Documents\Codex\fork23\mysql-26.7.0-winx64\bin`. Isso não
+substitui o PostgreSQL oficial do fork23 nem altera as portas HTTP da stack.
+
+Os procedimentos globais de bcrypt no PowerShell, dados sintéticos, dumps
+MySQL e responsividade devem ser aplicados somente com o contexto da TTS e sem
+importar nomes, quantidades, bancos, portas ou dados específicos do
+`novosga_tjrs`.
 
 ## Atualização do fluxo
 
