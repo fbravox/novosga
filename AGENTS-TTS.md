@@ -19,6 +19,11 @@ O worktree oficial desta branch é:
 
 `C:\Users\fbravo\Documents\Codex\fork23\fork23-tts`
 
+O arquivo secundário desta branch é `AGENTS-TTS.md`. A extensão `.md` é
+obrigatória para os arquivos secundários de fluxo; ele deve permanecer na
+raiz do worktree TTS e acompanhar as regras globais do `AGENTS.md` sem
+substituí-las.
+
 Anotações, dumps, capturas, scripts de teste, modelos baixados para avaliação
 e textos intermediários da TTS devem permanecer em subpastas identificadas de
 `C:\Users\fbravo\Documents\Codex\fork23`, preferencialmente em
