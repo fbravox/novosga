@@ -321,7 +321,9 @@ projeto, sem importar nomes de unidades, setores, dimensões ou fluxos
 específicos do `novosga_tjrs`. Para cada mudança de interface, registrar as
 dimensões relevantes quando forem conhecidas e testar pelo menos uma janela
 desktop em paisagem e uma janela alta e estreita, representando o uso em
-retrato.
+retrato. A referência física do monitor utilizado em orientação retrato é a
+largura medida de **294,7 mm**; essa medida deve ser considerada nos testes de
+layout estreito e não substituída por um breakpoint genérico.
 
 Priorizar grades flexíveis, redução dinâmica de larguras e consultas pelo
 tamanho do container quando apropriado. Não empilhar quadros apenas por um
