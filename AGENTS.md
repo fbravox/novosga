@@ -197,17 +197,19 @@ A raiz exclusiva de trabalho do fork23 é:
 
 Nenhuma worktree, pasta auxiliar, dump, script, log, captura de tela, arquivo
 de issue, análise externa ou outro artefato relacionado ao fork23 deve ser
-criado fora dessa raiz. Worktrees e pastas auxiliares devem usar nomes que
-identifiquem o projeto, preferencialmente o padrão `fork23-<identificador>`.
+criado fora dessa raiz. Worktrees e pastas auxiliares específicas devem usar
+nomes que identifiquem o projeto, preferencialmente o padrão
+`fork23-<identificador>`. A pasta auxiliar geral `work` é uma exceção
+intencional, seguindo o padrão do Codex.
 
 Worktrees oficiais:
 
 - DEV: `C:\Users\fbravo\Documents\Codex\fork23\fork23-dev`;
 - TTS: `C:\Users\fbravo\Documents\Codex\fork23\fork23-tts`.
 
-Artefatos que não fazem parte do repositório devem ficar em uma pasta auxiliar
-identificada, como `fork23-work`, dentro da raiz. Eles não devem entrar em
-commits por engano. Análises de upstream, ferramentas de apoio e dumps devem
+Artefatos que não fazem parte do repositório devem ficar na pasta auxiliar
+`work`, dentro da raiz. Eles não devem entrar em commits por engano. Análises
+de upstream, ferramentas de apoio e dumps devem
 ser mantidos em subpastas igualmente identificadas, sem reutilizar pastas ou
 arquivos de outro projeto.
 
@@ -271,7 +273,7 @@ do `novosga_tjrs`.
 
 Após a execução, conferir os totais esperados, estados do fluxo, relatórios,
 acentuação, ausência de duplicidades e a inexistência de qualquer escrita fora
-do DEV. Scripts e evidências devem permanecer em `fork23-work` ou subpasta
+do DEV. Scripts e evidências devem permanecer em `work` ou subpasta
 equivalente dentro da raiz do projeto, nunca em pastas externas.
 
 ## Cliente padrão para entregas de teste
@@ -308,7 +310,7 @@ corromper bytes UTF-8 e acentuação. O procedimento obrigatório é:
 7. validar acentuação, caracteres especiais, consultas e relatórios.
 
 Não sobrescrever bancos, volumes ou dumps sem confirmar o alvo. O arquivo
-original deve permanecer em `fork23-work` ou em outra subpasta da raiz, e
+original deve permanecer em `work` ou em outra subpasta da raiz, e
 credenciais devem ser fornecidas por mecanismo seguro, nunca incorporadas ao
 comando persistido ou ao Git.
 

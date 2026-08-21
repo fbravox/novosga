@@ -26,8 +26,9 @@ substituí-las.
 
 Anotações, dumps, capturas, scripts de teste, modelos baixados para avaliação
 e textos intermediários da TTS devem permanecer em subpastas identificadas de
-`C:\Users\fbravo\Documents\Codex\fork23`, preferencialmente em
-`fork23-work`. Não criar ou manter artefatos desta branch no workspace do
+`C:\Users\fbravo\Documents\Codex\fork23`, preferencialmente em `work`. A
+pasta `work` é a exceção oficial à nomenclatura `fork23-<identificador>` e
+segue o padrão do Codex. Não criar ou manter artefatos desta branch no workspace do
 `novosga_tjrs` ou fora da raiz do fork23.
 
 Anotações recebidas pela conversa de WhatsApp do responsável devem seguir o
